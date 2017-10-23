@@ -601,9 +601,14 @@ div.node .column-side .column-wrapper {
 .field-type-image .form-item,
 .field-type-image .form-wrapper {
   background-color: #E4DFD6;
-  margin-top: 2.8em;
+  margin-top: 2em;
   padding: 0.2em;
+  padding-top: 1em;
   margin-bottom: 1em;
+}
+.field-name-field-main-image.field-type-image .form-item {
+  margin-top: 2.8em;
+  padding-top: 0.2;
 }
 .field-type-image .form-item .image-widget-data {
   padding: 10px;
