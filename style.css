@@ -631,9 +631,11 @@ div.node .column-side .column-wrapper {
 
 .field-type-image .preview,
 .field-type-image input.remove,
-.field-type-image a.button {
+.field-type-image a.button,
+.wizard-form .sidebar-narrow-right.field-type-image a.button {
   float: left;
-	margin-top: 21px;
+  margin: 20px 5px 10px 5px;
+  line-height: 21px;
 }
 
 .field-type-image a.remove {
