@@ -1156,8 +1156,29 @@ body.cke_show_borders {
 /* media browser */
 
 .page-media-browser #media-browser-tabset {/* iframe html */
-    box-shadow: none;
+  box-shadow: none;
 }
 .media-wrapper.ui-dialog {
   max-width: 1000px;
+}
+.media-wrapper.ui-dialog .ui-dialog-titlebar {
+  color: #666;
+  border-radius: 4px 4px 0 0;
+  background-color: #d9d5cd;
+  background-image: none;
+}
+
+.media-wrapper.ui-dialog .ui-dialog-titlebar .ui-button-icon-only {
+  box-shadow: none;
+  background-color: transparent;
+  background-image: none;
+}
+.media-wrapper.ui-dialog .ui-dialog-titlebar .ui-button-icon-only .ui-icon {
+  left: 0;
+  top: 0;
+  background: url('images/message_x.png') no-repeat center center;
+}
+
+.page-media-browser .messages {
+  margin: 0px;
 }
