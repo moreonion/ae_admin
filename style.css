@@ -601,9 +601,14 @@ div.node .column-side .column-wrapper {
 .field-type-image .form-item,
 .field-type-image .form-wrapper {
   background-color: #E4DFD6;
-  margin-top: 2.8em;
+  margin-top: 2em;
   padding: 0.2em;
+  padding-top: 1em;
   margin-bottom: 1em;
+}
+.field-name-field-main-image.field-type-image .form-item {
+  margin-top: 2.8em;
+  padding-top: 0.2;
 }
 .field-type-image .form-item .image-widget-data {
   padding: 10px;
@@ -625,9 +630,12 @@ div.node .column-side .column-wrapper {
 }
 
 .field-type-image .preview,
-.field-type-image a.button {
+.field-type-image input.remove,
+.field-type-image a.button,
+.wizard-form .sidebar-narrow-right.field-type-image a.button {
   float: left;
-	margin-top: 21px;
+  margin: 20px 5px 10px 5px;
+  line-height: 21px;
 }
 
 .field-type-image a.remove {
