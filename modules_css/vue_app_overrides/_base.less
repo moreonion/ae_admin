@@ -32,6 +32,11 @@
   }
 }
 
+.field-inline {
+  display: inline-block;
+  width: 12rem;
+}
+
 .el-button {
   vertical-align: middle;
   font-size: @font-size-base;
@@ -102,6 +107,25 @@
   }
 }
 
+.el-select .el-input__inner {
+  color: @font-color;
+  background: @dropdown-bg;
+  border: 0 none;
+  padding: 0 1rem 0 0.6rem;
+  height: 1.8rem;
+  width: 4.8rem;
+
+  &:focus {
+    background-color: #D6D2CC;
+  }
+}
+
+.el-select .el-input .el-input__icon {
+  width: 1rem;
+  font-size: 7px;
+  color: @font-color;
+}
+
 .el-dropdown__caret-button {
   padding-left: 0.4rem;
   padding-right: 0.4rem;
@@ -112,9 +136,16 @@
   text-shadow: none;
 }
 
-.el-dropdown-menu, .el-select-dropdown, .el-select-dropdown__list, .typeahead .dropdown-menu {
-  margin-top: 1px;
+.el-select-dropdown {
+  margin-top: 0;
   border: 0 none;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.el-dropdown-menu, .el-select-dropdown__list, .typeahead .dropdown-menu {
+  margin-top: 1px;
+  border: @dropdown-border;
   border-radius: @btn-secondary-border-radius;
   background-color: @dropdown-bg;
   box-shadow: none;
