@@ -1,0 +1,191 @@
+.datasets-app {
+  margin-bottom: 1.25rem;
+
+  & * {
+    box-sizing: border-box;
+  }
+
+  label {
+    display: block;
+    font-size: @font-size-base;
+    font-weight: bold;
+    margin-bottom: 0.2rem;
+
+    small {
+      font-weight: normal;
+    }
+  }
+
+  .dsa-intro-text, .dsa-select-or-edit-dataset {
+    margin-bottom: 0.625rem;
+  }
+
+  .dsa-intro-text {
+    max-width: 22rem;
+  }
+
+  .dsa-has-error {
+    color: @red;
+  }
+
+  .el-dialog {
+    top: 3rem!important;
+  }
+
+  // choose dataset dialog
+
+  .el-dialog__header .el-button {
+    padding: 0.5rem 1rem 0.5rem;
+    position: absolute;
+    top: 0.55rem;
+    right: 2.7rem;
+  }
+
+  .dsa-hint {
+    margin-bottom: 0.625rem;
+  }
+
+  ul.dsa-datasets {
+    li {
+      border-bottom: 1px solid #ddd;
+      padding: 0.5rem;
+      font-weight: bold;
+      cursor: pointer;
+
+      &:last-of-type {
+        border-bottom: 0 none;
+      }
+
+      &:hover {
+        color: @cyan;
+      }
+    }
+  }
+
+  .dsa-select-dataset-dialog .el-dialog .el-dialog__body {
+    border-bottom-left-radius: 0.45rem;
+    border-bottom-right-radius: 0.45rem;
+  }
+
+  // edit dataset dialog
+
+  .dsa-edit-dataset-dialog {
+    .el-dialog .el-dialog__footer {
+      padding: 0;
+
+      .dialog-footer {
+        display: block;
+        padding: 1rem;
+        border-bottom-left-radius: @border-radius;
+        border-bottom-right-radius: @border-radius;
+
+        &.dialog-alert {
+          background-color: #f29779;
+
+          .dialog-alert-message {
+            margin-right: 1rem;
+          }
+        }
+      }
+    }
+
+    .dsa-dataset-meta {
+      margin-bottom: 1.5rem;
+    }
+
+    .VueTables__search {
+      &:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      label[for^="VueTables__search"] {
+        display: inline-block; // override generic label styles
+        display: none; // don't need this label for the moment
+      }
+
+      input {
+        .field-input();
+        display: inline-block;
+        width: 12rem;
+        margin-left: 1rem;
+        background-color: @active-cell-color;
+
+        &[value=""] {
+          background-color: @input-bg;
+        }
+      }
+    }
+
+
+    .table-responsive {
+      overflow-x: auto;
+    }
+
+    table tr:not(.VueTables__no-results) td {
+      padding-right: 1rem;
+
+      &:first-of-type {
+        min-width: 1.4rem;
+        color: @red;
+        border-right: 0 none;
+        padding-right: 0px;
+        font-size: 130%;
+      }
+    }
+
+    table tr.VueTables__no-results td {
+      color: @red;
+      text-align: center;
+    }
+
+    td.dsa-edited {
+      background-color: @active-cell-color;
+    }
+
+    .VuePagination {
+      text-align: center;
+
+      .page-link {
+        cursor: pointer;
+      }
+
+      .active .page-link {
+        font-weight: bold;
+      }
+    }
+
+    .dsa-upload-data-wrapper {
+      float: right;
+    }
+
+    .dsa-choose-dataset {
+      float: left;
+    }
+
+    .dsa-edit-value-popup {
+      border-radius: 5px;
+      background-color: #e5dfd6;
+      box-shadow: 1px 2px 10px 0px rgba(95, 93, 92, 0.5);
+
+      .dsa-edit-value-label, .dsa-edit-value-error {
+        margin-bottom: 0.1rem;
+      }
+
+      .dsa-edit-value-label { font-weight: bold; }
+
+      .dsa-edit-value-error { color: @red; }
+
+      .dsa-edit-value-input {
+        display: block;
+        min-width: 12rem;
+        margin-bottom: 0.4rem;
+      }
+
+      .el-button+.el-button {
+        margin: 0;
+      }
+    }
+  }
+}
