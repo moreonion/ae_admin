@@ -42,6 +42,10 @@
   border-color: #18CBDB;
   box-shadow: 0 0 3px #1AE3F2;
 }
+.field-inline {
+  display: inline-block;
+  width: 12rem;
+}
 .el-button {
   vertical-align: middle;
   font-size: 0.8125rem;
@@ -111,6 +115,22 @@
   background-color: #d66540;
   border: 1px solid #b65737;
 }
+.el-select .el-input__inner {
+  color: #514f4f;
+  background: #F5F1E8;
+  border: 0 none;
+  padding: 0 1rem 0 0.6rem;
+  height: 1.8rem;
+  width: 4.8rem;
+}
+.el-select .el-input__inner:focus {
+  background-color: #D6D2CC;
+}
+.el-select .el-input .el-input__icon {
+  width: 1rem;
+  font-size: 7px;
+  color: #514f4f;
+}
 .el-dropdown__caret-button {
   padding-left: 0.4rem;
   padding-right: 0.4rem;
@@ -119,12 +139,17 @@
   font-size: 7px;
   text-shadow: none;
 }
+.el-select-dropdown {
+  margin-top: 0;
+  border: 0 none;
+  background-color: transparent;
+  box-shadow: none;
+}
 .el-dropdown-menu,
-.el-select-dropdown,
 .el-select-dropdown__list,
 .typeahead .dropdown-menu {
   margin-top: 1px;
-  border: 0 none;
+  border: 1px solid #e1dfd9;
   border-radius: 0.45rem;
   background-color: #F5F1E8;
   box-shadow: none;
@@ -544,4 +569,191 @@
 }
 .e2tmw .tokens-list .table-sm tbody .token-description {
   width: 40%;
+}
+@media (min-width: 768px) {
+  #edit-thank-you-node.half-left .redirect-app {
+    width: calc(75% - 15px);
+  }
+}
+@media (min-width: 992px) {
+  #edit-thank-you-node.half-left .redirect-app {
+    width: calc(66.66667% - 15px);
+  }
+}
+@media (min-width: 1200px) {
+  #edit-thank-you-node.half-left .redirect-app {
+    width: calc(50% - 15px);
+  }
+}
+.redirect-app {
+  margin-top: 1rem;
+  width: 100%;
+}
+.redirect-app * {
+  box-sizing: border-box;
+}
+.redirect-app label {
+  display: block;
+  font-size: 0.8125rem;
+  font-weight: bold;
+  margin-bottom: 0.4rem;
+}
+.redirect-app label small {
+  font-weight: normal;
+}
+.redirect-app .pra-has-error .field-input,
+.redirect-app .pra-has-error.field-input {
+  border-color: #d66540;
+  box-shadow: 0 0 1px 0 #EA6852;
+}
+.redirect-app .pra-error-message {
+  margin-top: 0.2rem;
+  color: #d66540;
+}
+.redirect-app small,
+.redirect-app .small {
+  font-size: 90%;
+}
+.redirect-app .pra-redirects {
+  margin: 1rem 0;
+}
+.redirect-app .pra-redirect {
+  padding: 0.5rem 0.5rem 0.5rem 0.8rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid #D8D5CD;
+  background-color: #EAE6DE;
+  border-radius: 0;
+}
+.redirect-app .pra-redirect .pra-redirect-handle {
+  border: 0 none;
+  width: 1.8rem;
+  height: 1.7rem;
+  line-height: 2rem;
+}
+.redirect-app .pra-redirect .pra-redirect-handle:before {
+  content: "\e800";
+  font-family: "icons";
+  font-size: 1.1rem;
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: 0.3rem;
+  margin-left: 0.3rem;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.redirect-app .pra-redirect .pra-redirect-info {
+  word-wrap: break-word;
+  width: calc(100% - 9rem);
+}
+.redirect-app .pra-redirect .pra-redirect-label {
+  font-weight: bold;
+}
+.redirect-app .pra-redirect ul.pra-redirect-info-filters {
+  list-style-type: disc;
+}
+.redirect-app .pra-redirect ul.pra-redirect-info-filters li {
+  list-style-type: disc;
+  margin-left: 1rem;
+}
+.redirect-app .pra-redirect.sortable-drag {
+  border: 1px dashed #999;
+  background-color: #D8D5CD;
+}
+.redirect-app .pra-redirect.sortable-ghost {
+  opacity: 1;
+  border: 1px dashed #999;
+  background-color: transparent;
+}
+.redirect-app .pra-redirect.sortable-ghost * {
+  visibility: hidden;
+}
+.redirect-app .pra-default-redirect .typeahead,
+.redirect-app .pra-redirect-destination .typeahead {
+  width: 100%;
+}
+.redirect-app .el-dialog {
+  max-width: 36rem;
+}
+.redirect-app .el-dialog section {
+  margin-bottom: 1rem;
+}
+.redirect-app .el-dialog section.pra-redirect-destination {
+  margin-bottom: 0;
+}
+.redirect-app .el-dialog .el-dialog__footer {
+  padding: 0;
+}
+.redirect-app .el-dialog .el-dialog__footer .pra-dialog-footer {
+  display: block;
+  padding: 1rem;
+  border-bottom-left-radius: 0.45rem;
+  border-bottom-right-radius: 0.45rem;
+}
+.redirect-app .el-dialog .el-dialog__footer .pra-dialog-footer.pra-dialog-alert {
+  background-color: #f29779;
+}
+.redirect-app .el-dialog .el-dialog__footer .pra-dialog-footer.pra-dialog-alert .pra-dialog-alert-message {
+  margin-right: 1rem;
+}
+.redirect-app .pra-filter-editor header {
+  margin-bottom: 0.8rem;
+}
+.redirect-app .pra-filter-editor .pra-filter {
+  display: block;
+  position: relative;
+  margin-bottom: 0.8rem;
+  padding: 0.5rem 2.5rem 0.5rem 1rem;
+  background-color: #EAE6DE;
+  border: 1px solid #D8D5CD;
+  border-radius: 0.2rem;
+}
+.redirect-app .pra-filter-editor .pra-filter *:not(.el-input__icon) {
+  font-size: 0.8125rem;
+}
+.redirect-app .pra-filter-editor .pra-filter .field-input {
+  margin-bottom: 0;
+}
+.redirect-app .pra-filter-editor .pra-filter.pra-filter-submission-field .pra-filter-field input,
+.redirect-app .pra-filter-editor .pra-filter.pra-filter-submission-field .pra-filter-operator input {
+  width: 8rem;
+}
+.redirect-app .pra-filter-editor .pra-filter .remove-filter {
+  position: absolute;
+  right: 0.5rem;
+  top: 0.85rem;
+  color: #d66540;
+}
+.redirect-app .pra-filter-editor .pra-filter .remove-filter:before {
+  content: "\e803";
+  font-family: "icons";
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: 0.2em;
+  margin-left: 0.2em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.redirect-app .pra-filter-editor .pra-filter .remove-filter:focus,
+.redirect-app .pra-filter-editor .pra-filter .remove-filter:hover {
+  text-decoration: none;
+}
+.redirect-app .pra-filter-editor .pra-filter .remove-filter > span {
+  display: none;
 }
