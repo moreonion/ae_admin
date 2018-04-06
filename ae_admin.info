@@ -35,6 +35,7 @@ stylesheets[screen][] = modules_css/jquery.ui.progressbar.css
 stylesheets[screen][] = modules_css/jquery.ui.tabs.css
 stylesheets[screen][] = modules_css/jquery.ui.theme.css
 stylesheets[screen][] = modules_css/media.css
+stylesheets[screen][] = modules_css/modal.css
 stylesheets[screen][] = modules_css/options_element.css
 stylesheets[screen][] = modules_css/wizard.css
 stylesheets[screen][] = modules_css/bootstrap-tooltip-popover.css
