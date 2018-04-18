@@ -520,10 +520,11 @@ div.form-builder-new-field span.progress {
 #form-builder-field-palette ul li.field-city a {
   background-position: 5px -1362px;
 }
-#form-builder-field-palette ul li.field-direct_mail_newsletter a {
-  background-position: 5px -84px;
-}
-#form-builder-field-palette ul li.field-email_newsletter a, #form-builder-field-palette ul li.field-newsletter a {
+#form-builder-field-palette ul li.field-email_newsletter a,
+#form-builder-field-palette ul li.field-newsletter a,
+#form-builder-field-palette ul li.field-opt_in a,
+#form-builder-field-palette ul li.field-phone_opt_in a,
+#form-builder-field-palette ul li.field-post_opt_in a {
   background-position: 5px -923px;
 }
 #form-builder-field-palette ul li.field-comment a {
