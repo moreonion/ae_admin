@@ -13,8 +13,14 @@
   }
 }
 
-.dnd-empty {
-  display: none;
+.mfb-app {
+  .dnd-empty {
+    display: none;
+  }
+
+  .field-input, .el-input__inner, .el-textarea__inner {
+    margin-bottom: 0;
+  }
 }
 
 .mfb-config-section-header {
@@ -78,7 +84,6 @@
     }
   }
 
-
   .dnd-it {
     padding: 0 0 0.6rem;
   }
@@ -138,4 +143,14 @@
 // HACK: Make it easier to hit the drop area when trying to add a new page.
 .mfb-element-root > .mfb-element-children > .dnd-cont > .dnd-it:last-of-type {
   padding-bottom: 5rem;
+}
+
+.mfb-config-dialog > .el-dialog {
+  width: 90%;
+
+  @media screen and (min-width: 530px) { width: 80%; }
+  @media screen and (min-width: 700px) { width: 70%; }
+  @media screen and (min-width: 1000px) { width: 60%; }
+  @media screen and (min-width: 1200px) { width: 50%; }
+  @media screen and (min-width: 1400px) { width: 40%; }
 }

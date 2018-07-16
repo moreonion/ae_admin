@@ -1037,8 +1037,13 @@
 .datasets-app .dsa-edit-dataset-dialog .dsa-edit-value-popup .el-button + .el-button {
   margin: 0;
 }
-.dnd-empty {
+.mfb-app .dnd-empty {
   display: none;
+}
+.mfb-app .field-input,
+.mfb-app .el-input__inner,
+.mfb-app .el-textarea__inner {
+  margin-bottom: 0;
 }
 .mfb-config-section-header {
   font-weight: bold;
@@ -1154,6 +1159,34 @@
 }
 .mfb-element-root > .mfb-element-children > .dnd-cont > .dnd-it:last-of-type {
   padding-bottom: 5rem;
+}
+.mfb-config-dialog > .el-dialog {
+  width: 90%;
+}
+@media screen and (min-width: 530px) {
+  .mfb-config-dialog > .el-dialog {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 700px) {
+  .mfb-config-dialog > .el-dialog {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .mfb-config-dialog > .el-dialog {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .mfb-config-dialog > .el-dialog {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .mfb-config-dialog > .el-dialog {
+    width: 40%;
+  }
 }
 .mfb-element-page {
   border: 0.3rem solid #dad9d4;
