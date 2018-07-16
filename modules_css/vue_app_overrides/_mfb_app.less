@@ -1,7 +1,141 @@
+@palette-display-breakpoint: 700px;
+@palette-mobile-two-colums-breakpoint: 450px;
+@palette-desktop-two-colums-breakpoint: 1300px;
+
+.palette-two-columns() {
+  .dnd-it {
+    width: calc(~"50% - 0.4rem");
+    float: left;
+
+    &:nth-child(2n+1) {
+      margin-right: 0.8rem;
+    }
+  }
+}
+
 .dnd-empty {
   display: none;
 }
 
 .mfb-config-section-header {
   font-weight: bold;
+}
+
+.mfb-builder, .mfb-palette {
+  @media screen and (min-width: @palette-display-breakpoint) {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  & > h1 {
+    .ae-legend();
+    text-align: center;
+    border-bottom:  1px solid @separator-color;
+    margin: 0 0 1rem;
+    padding-bottom:  0.5rem;
+
+    @media screen and (min-width: @palette-display-breakpoint) {
+      text-align: left;
+    }
+  }
+}
+
+.mfb-builder {
+  @media screen and (min-width: @palette-display-breakpoint) {
+    width: 60%;
+  }
+}
+
+.mfb-palette {
+  @media screen and (min-width: @palette-display-breakpoint) {
+    width: 40%;
+    padding-left: 2rem;
+
+    h1 {
+      margin-bottom: 0.5rem;
+      padding-bottom: 0;
+      border-bottom: 0 none;
+    }
+  }
+
+  .el-collapse {
+    border: 1px solid @separator-color;
+
+    .el-collapse-item__header {
+      background-color: @darker-beige;
+      border-bottom: 1px solid @separator-color;
+    }
+
+    .el-collapse-item__wrap {
+      background-color: @white;
+
+      .el-collapse-item__content {
+        padding: 0.8rem 0.8rem 0.2rem;
+        font-size: 0.9rem;
+        color: @font-color;
+        line-height: 1.7;
+      }
+    }
+  }
+
+
+  .dnd-it {
+    padding: 0 0 0.6rem;
+  }
+
+  .mfb-palette-item {
+    min-width: 12rem;
+    padding: 0.4rem 0.8rem;
+    border: 1px solid @separator-color;
+    border-radius: 3px;
+
+    svg {
+      margin-right: 0.4rem;
+    }
+  }
+}
+
+.mfb-palette-mobile {
+  .el-collapse {
+    margin-bottom: -1px;
+  }
+
+  @media screen and (min-width: @palette-mobile-two-colums-breakpoint) {
+    .palette-two-columns();
+  }
+}
+
+.mfb-palette-desktop {
+  .el-collapse {
+    margin-bottom: 1rem;
+  }
+
+  @media screen and (min-width: @palette-desktop-two-colums-breakpoint) {
+    .palette-two-columns();
+  }
+}
+
+// Palette item while being dragged – not a child of .mfb-palette
+.dnd-drag .mfb-palette-item {
+  padding: 0.4rem 0.8rem;
+}
+
+.mfb-show-mobile-palette {
+  display: block;
+  margin-bottom: 2rem;
+  text-align: center;
+
+  & > .el-button {
+    min-width: 200px;
+  }
+}
+
+.mfb-element-root > .mfb-element-children > .dnd-cont > .dnd-it {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+// HACK: Make it easier to hit the drop area when trying to add a new page.
+.mfb-element-root > .mfb-element-children > .dnd-cont > .dnd-it:last-of-type {
+  padding-bottom: 5rem;
 }
