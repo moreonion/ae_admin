@@ -1188,6 +1188,10 @@
     width: 40%;
   }
 }
+.mfb-element-missing {
+  min-height: 2.3rem;
+  background-color: #df876a;
+}
 .mfb-element-page {
   border: 0.3rem solid #dad9d4;
   margin-top: 0.8rem;
