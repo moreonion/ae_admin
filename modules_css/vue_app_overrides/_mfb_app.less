@@ -154,3 +154,39 @@
   @media screen and (min-width: 1200px) { width: 50%; }
   @media screen and (min-width: 1400px) { width: 40%; }
 }
+
+.el-popover.mfb-delete-element-popover {
+  padding: 1rem;
+  border: 0 none;
+  border-radius: 0.4rem;
+  background-color: lighten(@red, 10%);
+  box-shadow: 1px 1px 5px 1px rgba(142, 98, 86, 0.5);
+
+  .popper__arrow {
+    display: none;
+  }
+
+  &[x-placement^=top] .popper__arrow, .popper__arrow::after {
+    display: block;
+    border-top-color: lighten(@red, 10%);
+  }
+
+  p {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+
+  .mfb-delete-element-popover-buttons {
+    text-align: right;
+
+    .el-button--text {
+      color: @font-color;
+    }
+    .el-button--text:active {
+      color: darken(@font-color, 10%);
+    }
+    .el-button--text:focus, .el-button--text:hover {
+      color: lighten(@font-color, 10%);
+    }
+  }
+}
