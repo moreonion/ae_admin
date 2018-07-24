@@ -1164,9 +1164,6 @@
   padding-left: 0;
   padding-right: 0;
 }
-.mfb-element-root > .mfb-element-children > .dnd-cont > .dnd-it:last-of-type {
-  padding-bottom: 5rem;
-}
 .mfb-config-dialog > .el-dialog {
   width: 90%;
 }
