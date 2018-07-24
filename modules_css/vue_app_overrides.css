@@ -87,6 +87,7 @@
   text-shadow: 1px 1px 1px #413F3F;
   outline: none;
   cursor: pointer;
+  text-decoration: none;
 }
 .el-button:not(.el-button--text):focus,
 .el-button:not(.el-button--text):hover {
@@ -94,6 +95,7 @@
   background-color: #827F7F;
   outline: none;
   box-shadow: none;
+  text-decoration: none;
 }
 .el-button:not(.el-button--text):active,
 .el-button:not(.el-button--text):active:focus {
@@ -101,6 +103,7 @@
   background-color: #666;
   text-shadow: 0 1px 0 #999;
   outline: none;
+  text-decoration: none;
 }
 .el-button:not(.el-button--text).is-disabled,
 .el-button:not(.el-button--text).is-disabled:focus,
@@ -109,6 +112,7 @@
   color: rgba(95, 93, 92, 0.5);
   background-color: #b2ada7;
   text-shadow: none;
+  text-decoration: none;
 }
 .el-button:not(.el-button--text) .el-icon--right {
   font-size: 7px;
@@ -150,13 +154,16 @@
 }
 .el-button--text {
   color: #d66540;
+  text-decoration: none;
 }
 .el-button--text:active {
   color: #bb4c28;
+  text-decoration: none;
 }
 .el-button--text:focus,
 .el-button--text:hover {
   color: #df876a;
+  text-decoration: none;
 }
 .el-select .el-input__inner {
   color: #514f4f;
@@ -1188,6 +1195,40 @@
     width: 40%;
   }
 }
+.mfb-config-dialog .el-select .el-input__icon {
+  right: 2px;
+}
+.mfb-config-dialog .el-select .el-input__inner {
+  width: 100%;
+  border: 2px solid #c6c6c6;
+  color: #666;
+  background: #fff;
+}
+.mfb-config-dialog .el-select .el-input__inner:hover,
+.mfb-config-dialog .el-select .el-input__inner:focus {
+  background: #fff;
+  color: #575555;
+  border-color: #18CBDB;
+  box-shadow: 0 0 3px #1AE3F2;
+}
+.page-node-wizard-form .el-select-dropdown__item {
+  color: #666;
+}
+.page-node-wizard-form .el-select-dropdown__item.hover,
+.page-node-wizard-form .el-select-dropdown__item.selected.hover {
+  color: #faf7ee;
+  background-color: #9e9696;
+}
+.page-node-wizard-form .el-select-dropdown__item.selected:not(.hover) {
+  color: #faf7ee;
+  background-color: #bbb5b5;
+}
+.page-node-wizard-form .el-dropdown-menu,
+.page-node-wizard-form .el-select-dropdown__list,
+.page-node-wizard-form .typeahead .dropdown-menu {
+  background-color: #faf7ee;
+  border-color: #c7c3b5;
+}
 .el-popover.mfb-delete-element-popover {
   padding: 1rem;
   border: 0 none;
@@ -1219,6 +1260,12 @@
 .el-popover.mfb-delete-element-popover .mfb-delete-element-popover-buttons .el-button--text:focus,
 .el-popover.mfb-delete-element-popover .mfb-delete-element-popover-buttons .el-button--text:hover {
   color: #6b6868;
+}
+.mfb-configuring-markup .el-select {
+  margin-right: 0.5rem;
+}
+.mfb-configuring-markup .el-textarea__inner {
+  min-height: 10.75rem;
 }
 .mfb-element-missing {
   min-height: 2.3rem;

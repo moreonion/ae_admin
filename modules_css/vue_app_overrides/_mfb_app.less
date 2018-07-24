@@ -155,6 +155,49 @@
   @media screen and (min-width: 1400px) { width: 40%; }
 }
 
+.mfb-config-dialog {
+  // Override base styles for select fields in the config dialog
+  .el-select {
+    .el-input__icon {
+      right: 2px;
+    }
+
+    .el-input__inner {
+      width: 100%;
+      border: @input-border;
+      color: @input-color;
+      background: @input-bg;
+
+      &:hover, &:focus {
+        background:  @input-bg;
+        color: @input-focus-color;
+        border-color: @input-focus-border-color;
+        box-shadow: @input-focus-box-shadow;
+      }
+    }
+  }
+}
+
+.page-node-wizard-form {
+  // Override base styles for select fields in the config dialog
+  .el-select-dropdown__item {
+    color: @input-color;
+
+    &.hover, &.selected.hover {
+      color: #faf7ee;
+      background-color: #9e9696;
+    }
+    &.selected:not(.hover) {
+      color: #faf7ee;
+      background-color: #bbb5b5;
+    }
+  }
+  .el-dropdown-menu, .el-select-dropdown__list, .typeahead .dropdown-menu {
+    background-color: #faf7ee;
+    border-color: #c7c3b5;
+  }
+}
+
 .el-popover.mfb-delete-element-popover {
   padding: 1rem;
   border: 0 none;

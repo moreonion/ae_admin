@@ -19,14 +19,14 @@
   width: 100%;
   padding: 0.4rem 0.5rem .3rem;
   margin-bottom: 0.35rem;
-  border: 2px solid #c6c6c6;
+  border: @input-border;
   background: @input-bg;
-  color: #666;
+  color: @input-color;
   font-family: @font-family-sans-serif;
   font-size: @font-size-base;
   line-height: 130%;
   max-width: 100%;
-  box-shadow: 0 0 3px #efefef;
+  box-shadow: @input-box-shadow;
   border-radius: @input-border-radius;
 
   &::-webkit-input-placeholder { color: @placeholder-color; }
@@ -36,9 +36,9 @@
                 &::placeholder { color: @placeholder-color; }
 
   &:hover, &:focus {
-    color: #575555;
-    border-color: #18CBDB;
-    box-shadow: 0 0 3px #1AE3F2;
+    color: @input-focus-color;
+    border-color: @input-focus-border-color;
+    box-shadow: @input-focus-box-shadow;
   }
 }
 
@@ -64,12 +64,14 @@
   text-shadow: @btn-secondary-text-shadow;
   outline: none;
   cursor: pointer;
+  text-decoration: none;
 
   &:focus, &:hover {
     color: @btn-secondary-color;
     background-color: @btn-secondary-hover-bg;
     outline: none;
     box-shadow: none;
+    text-decoration: none;
   }
 
   &:active, &:active:focus {
@@ -77,6 +79,7 @@
     background-color: #666;
     text-shadow: 0 1px 0 #999;
     outline: none;
+    text-decoration: none;
   }
 
   &.is-disabled, &.is-disabled:focus, &.is-disabled:hover {
@@ -84,6 +87,7 @@
     color: @disabled-button-color;
     background-color: @disabled-button-bg;
     text-shadow: none;
+    text-decoration: none;
   }
 
   // Dropdown caret
@@ -128,12 +132,15 @@
 
 .el-button--text {
   color: @red;
+  text-decoration: none;
 }
 .el-button--text:active {
   color: darken(@red, 10%);
+  text-decoration: none;
 }
 .el-button--text:focus, .el-button--text:hover {
   color: lighten(@red, 10%);
+  text-decoration: none;
 }
 
 .el-select .el-input__inner {
@@ -142,7 +149,7 @@
   border: 0 none;
   padding: 0 1rem 0 0.6rem;
   height: 1.8rem;
-  width: 4.8rem;
+  width: 4.8rem; // HACK why is this in place? overridden in _mfb_app.less to avopid breaking anything.
 
   &:focus {
     background-color: #D6D2CC;
