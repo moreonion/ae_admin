@@ -16,9 +16,16 @@
     }
   }
 
-  .el-dialog__headerbtn .el-dialog__close {
-    font-weight: bold;
-    color: #7d7d7d;
+  .el-dialog__headerbtn {
+    // Bigger area for better tapping.
+    padding: 1rem;
+    margin-top: -1rem;
+    margin-right: -1rem;
+
+    .el-dialog__close {
+      font-weight: bold;
+      color: #7d7d7d;
+    }
   }
 
   .el-dialog__headerbtn:focus .el-dialog__close,
