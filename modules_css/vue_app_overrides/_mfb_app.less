@@ -49,15 +49,19 @@
 .mfb-builder {
   @media screen and (min-width: @palette-display-breakpoint) {
     width: 60%;
+
+    & > h1 {
+      margin-left: 2.125rem;
+    }
   }
 }
 
 .mfb-palette {
   @media screen and (min-width: @palette-display-breakpoint) {
     width: 40%;
-    padding-left: 2rem;
+    padding-right: 2rem;
 
-    h1 {
+    & > h1 {
       margin-bottom: 0.5rem;
       padding-bottom: 0;
       border-bottom: 0 none;

@@ -1090,13 +1090,16 @@
   .mfb-builder {
     width: 60%;
   }
+  .mfb-builder > h1 {
+    margin-left: 2.125rem;
+  }
 }
 @media screen and (min-width: 700px) {
   .mfb-palette {
     width: 40%;
-    padding-left: 2rem;
+    padding-right: 2rem;
   }
-  .mfb-palette h1 {
+  .mfb-palette > h1 {
     margin-bottom: 0.5rem;
     padding-bottom: 0;
     border-bottom: 0 none;
