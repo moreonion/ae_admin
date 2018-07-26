@@ -94,9 +94,12 @@
 
   .mfb-palette-item {
     min-width: 12rem;
-    padding: 0.4rem 0.8rem;
     border: 1px solid @separator-color;
     border-radius: 3px;
+
+    & > div { // clickable area
+      padding: 0.4rem 0.8rem;
+    }
 
     svg {
       margin-right: 0.4rem;
