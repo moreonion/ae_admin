@@ -1147,6 +1147,11 @@
     margin-right: 0.8rem;
   }
 }
+.mfb-palette-desktop {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
 .mfb-palette-desktop .el-collapse {
   margin-bottom: 1rem;
 }
