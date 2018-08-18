@@ -47,6 +47,8 @@
 }
 
 .mfb-builder {
+  overflow: hidden;
+
   @media screen and (min-width: @palette-display-breakpoint) {
     width: 60%;
 
@@ -147,6 +149,7 @@
 }
 
 // Compensate padding on .dnd-it
+// This needs overflow: hidden on .mfb-builder
 .mfb-element-root {
   margin-left: -0.5rem;
   margin-right: -0.5rem;

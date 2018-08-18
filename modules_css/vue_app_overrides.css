@@ -1086,6 +1086,9 @@
     text-align: left;
   }
 }
+.mfb-builder {
+  overflow: hidden;
+}
 @media screen and (min-width: 700px) {
   .mfb-builder {
     width: 60%;
