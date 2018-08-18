@@ -1175,9 +1175,9 @@
 .mfb-show-mobile-palette > .el-button {
   min-width: 200px;
 }
-.mfb-element-root > .mfb-element-children > .dnd-cont > .dnd-it {
-  padding-left: 0;
-  padding-right: 0;
+.mfb-element-root {
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
 }
 .mfb-config-dialog > .el-dialog {
   width: 90%;
