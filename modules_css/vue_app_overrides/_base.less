@@ -1,3 +1,12 @@
+.ae-legend {
+  text-transform: uppercase;
+  font-weight: normal;
+  margin-bottom: 0.625rem;
+  color: #65635f;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
 .form-group {
   margin-bottom: 0.8rem;
 
@@ -65,8 +74,10 @@
   }
 
   &.is-disabled, &.is-disabled:focus, &.is-disabled:hover {
-    background-color: @btn-secondary-bg;
     border: 0 none;
+    color: @disabled-button-color;
+    background-color: @disabled-button-bg;
+    text-shadow: none;
   }
 
   // Dropdown caret
@@ -102,8 +113,10 @@
   }
 
   &:disabled, &.disabled, &[disabled]:hover {
-    background-color: @btn-primary-bg;
-    border: @btn-primary-border;
+    border: 1px solid @disabled-button-bg;
+    color: @disabled-button-color;
+    background-color: @disabled-button-bg;
+    text-shadow: none;
   }
 }
 

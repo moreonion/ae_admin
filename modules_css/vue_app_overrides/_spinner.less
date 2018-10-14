@@ -1,0 +1,32 @@
+.el-loading-mask {
+  position: absolute;
+  z-index: 10000;
+  background-color: @spinner-mask-color;
+  margin: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition: opacity .3s;
+}
+
+.el-loading-spinner .el-loading-text {
+  color: @spinner-color;
+  margin: 3px 0;
+  font-size: 14px;
+}
+
+.el-loading-spinner .circular {
+  width: 42px;
+  height: 42px;
+  animation: loading-rotate 2s linear infinite;
+}
+
+.el-loading-spinner .path {
+  animation: loading-dash 1.5s ease-in-out infinite;
+  stroke-dasharray: 90,150;
+  stroke-dashoffset: 0;
+  stroke-width: 2;
+  stroke: @spinner-color;
+  stroke-linecap: round;
+}
