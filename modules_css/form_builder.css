@@ -536,7 +536,9 @@ div.form-builder-new-field span.progress {
 #form-builder-field-palette ul li.field-currency a {
   background-position: 5px -1482px;
 }
-
+#form-builder-field-palette ul li.field-autocomplete a {
+  background-position: 5px -1734px;
+}
 
 #edit-submit-button-text {
   padding: 0.5em 1.2em;
