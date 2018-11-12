@@ -175,6 +175,12 @@ a.close, a.close:hover {
   background:url(images/bleeds.png) -40px -120px no-repeat;
   }
 
+.tabledrag-processed caption {
+  display: none;
+}
+.tabledrag-handle + .form-type-checkbox {
+  margin-left: 2em;
+}
 
 table {
   width:100%;
