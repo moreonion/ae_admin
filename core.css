@@ -532,6 +532,18 @@ select.form-select:focus,
   box-shadow: #1AE3F2 0px 0px 3px;
 }
 
+.form-builder-element .form-autocomplete,
+.form-builder-element input.form-text,
+.form-builder-element textarea.form-textarea,
+.form-builder-element select.form-select {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.form-builder-element select.form-select {
+  pointer-events: none;
+}
+
 .select2-container .select2-selection {
   min-height: 1.4em;
 }
