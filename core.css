@@ -600,6 +600,17 @@ select:not([multiple]) + .select2-container {
   color: #BD5330;
 }
 
+/* Select2 form builder overrides */
+.form-builder-element .select2-container {
+  pointer-events: none;
+}
+.form-builder-element select:not([multiple]) + .select2-container {
+  min-width: 100%;
+}
+.form-builder-element .select2-container .select2-selection {
+  min-height: 2.5em;
+}
+
 /* Fluid input */
 input.fluid {
   -moz-box-sizing:border-box;
