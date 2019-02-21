@@ -227,6 +227,117 @@
   border-right: .3em solid transparent;
   border-left: .3em solid transparent;
 }
+.show-help-text {
+  color: #0275d8;
+}
+.show-help-text:before {
+  content: "\e801";
+  font-family: "icons";
+  font-size: 0.9rem;
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: 0.2em;
+  margin-left: 0.2em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.show-help-text > span {
+  display: none;
+}
+.show-help-text:focus,
+.show-help-text:hover {
+  text-decoration: none;
+}
+.v-tooltip {
+  display: block !important;
+  z-index: 10000;
+}
+.v-tooltip .tooltip-inner {
+  background: #413F3F;
+  color: #F7F1F1;
+  border-radius: 0.45rem;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  padding: 5px 10px 4px;
+}
+.v-tooltip .tooltip-arrow {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  position: absolute;
+  margin: 5px;
+  border-color: #413F3F;
+  z-index: 1;
+}
+.v-tooltip[x-placement^="top"] {
+  margin-bottom: 5px;
+}
+.v-tooltip[x-placement^="top"] .tooltip-arrow {
+  border-width: 5px 5px 0 5px;
+  border-left-color: transparent !important;
+  border-right-color: transparent !important;
+  border-bottom-color: transparent !important;
+  bottom: -5px;
+  left: calc(50% - 5px);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.v-tooltip[x-placement^="bottom"] {
+  margin-top: 5px;
+}
+.v-tooltip[x-placement^="bottom"] .tooltip-arrow {
+  border-width: 0 5px 5px 5px;
+  border-left-color: transparent !important;
+  border-right-color: transparent !important;
+  border-top-color: transparent !important;
+  top: -5px;
+  left: calc(50% - 5px);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.v-tooltip[x-placement^="right"] {
+  margin-left: 5px;
+}
+.v-tooltip[x-placement^="right"] .tooltip-arrow {
+  border-width: 5px 5px 5px 0;
+  border-left-color: transparent !important;
+  border-top-color: transparent !important;
+  border-bottom-color: transparent !important;
+  left: -5px;
+  top: calc(50% - 5px);
+  margin-left: 0;
+  margin-right: 0;
+}
+.v-tooltip[x-placement^="left"] {
+  margin-right: 5px;
+}
+.v-tooltip[x-placement^="left"] .tooltip-arrow {
+  border-width: 5px 0 5px 5px;
+  border-top-color: transparent !important;
+  border-right-color: transparent !important;
+  border-bottom-color: transparent !important;
+  right: -5px;
+  top: calc(50% - 5px);
+  margin-left: 0;
+  margin-right: 0;
+}
+.v-tooltip[aria-hidden='true'] {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .15s, visibility .15s;
+}
+.v-tooltip[aria-hidden='false'] {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity .15s;
+}
 .el-dialog {
   border-radius: 0.45rem;
 }
@@ -455,35 +566,6 @@
 .e2tmw .value-missing,
 .e2tmw .filter-missing {
   color: #d66540;
-}
-.e2tmw .show-help-text {
-  color: #0275d8;
-}
-.e2tmw .show-help-text:before {
-  content: "\e801";
-  font-family: "icons";
-  font-size: 0.9rem;
-  font-style: normal;
-  font-weight: normal;
-  speak: none;
-  display: inline-block;
-  text-decoration: inherit;
-  width: 1em;
-  margin-right: 0.2em;
-  margin-left: 0.2em;
-  text-align: center;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1em;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-.e2tmw .show-help-text > span {
-  display: none;
-}
-.e2tmw .show-help-text:focus,
-.e2tmw .show-help-text:hover {
-  text-decoration: none;
 }
 .e2tmw .el-dialog {
   max-width: 32rem;
@@ -895,7 +977,6 @@
   /* Firefox 18- */
   display: inline-block;
   width: 12rem;
-  margin-left: 1rem;
   background-color: #fff5aa;
 }
 .datasets-app .dsa-edit-dataset-dialog .VueTables__search input::-webkit-input-placeholder {
@@ -923,6 +1004,10 @@
 }
 .datasets-app .dsa-edit-dataset-dialog .VueTables__search input[value=""] {
   background-color: #fff;
+}
+.datasets-app .dsa-edit-dataset-dialog .dsa-filter-tooltip-icon {
+  margin-left: 0.3rem;
+  cursor: default;
 }
 .datasets-app .dsa-edit-dataset-dialog .table-responsive {
   overflow-x: auto;
@@ -993,4 +1078,7 @@
 }
 .datasets-app .dsa-edit-dataset-dialog .dsa-edit-value-popup .el-button + .el-button {
   margin: 0;
+}
+.dsa-filter-tooltip .tooltip-arrow {
+  left: calc(50% - 5px) !important;
 }

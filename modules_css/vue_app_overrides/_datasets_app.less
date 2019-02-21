@@ -109,7 +109,6 @@
         .field-input();
         display: inline-block;
         width: 12rem;
-        margin-left: 1rem;
         background-color: @active-cell-color;
 
         &[value=""] {
@@ -118,6 +117,10 @@
       }
     }
 
+    .dsa-filter-tooltip-icon {
+      margin-left: 0.3rem;
+      cursor: default;
+    }
 
     .table-responsive {
       overflow-x: auto;
@@ -204,4 +207,8 @@
       }
     }
   }
+}
+
+.dsa-filter-tooltip .tooltip-arrow {
+  left: calc(~"50% - 5px")!important;
 }
