@@ -143,22 +143,6 @@
   font-size: 7px;
   color: #514f4f;
 }
-.el-select .el-input__inner {
-  color: #514f4f;
-  background: #F5F1E8;
-  border: 0 none;
-  padding: 0 1rem 0 0.6rem;
-  height: 1.8rem;
-  width: 4.8rem;
-}
-.el-select .el-input__inner:focus {
-  background-color: #D6D2CC;
-}
-.el-select .el-input .el-input__icon {
-  width: 1rem;
-  font-size: 7px;
-  color: #514f4f;
-}
 .el-dropdown__caret-button {
   padding-left: 0.4rem;
   padding-right: 0.4rem;
