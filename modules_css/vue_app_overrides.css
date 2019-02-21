@@ -928,14 +928,26 @@
   overflow-x: auto;
 }
 .datasets-app .dsa-edit-dataset-dialog table tr:not(.VueTables__no-results) td {
-  padding-right: 1rem;
+  padding: 0;
 }
 .datasets-app .dsa-edit-dataset-dialog table tr:not(.VueTables__no-results) td:first-of-type {
   min-width: 1.4rem;
   color: #d66540;
   border-right: 0 none;
-  padding-right: 0px;
+  padding: 5px 0 5px 5px;
   font-size: 130%;
+}
+.datasets-app .dsa-edit-dataset-dialog table tr:not(.VueTables__no-results) td:last-of-type {
+  padding: 5px;
+}
+.datasets-app .dsa-edit-dataset-dialog table tr:not(.VueTables__no-results) td .dsa-contact-field {
+  padding: 5px 1rem 5px 5px;
+}
+.datasets-app .dsa-edit-dataset-dialog table tr:not(.VueTables__no-results) td .dsa-contact-field-invalid {
+  background-color: rgba(214, 101, 64, 0.5);
+}
+.datasets-app .dsa-edit-dataset-dialog table tr:not(.VueTables__no-results) td.dsa-edited .dsa-contact-field-invalid {
+  background-color: transparent;
 }
 .datasets-app .dsa-edit-dataset-dialog table tr.VueTables__no-results td {
   color: #d66540;

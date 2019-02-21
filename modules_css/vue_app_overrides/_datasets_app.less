@@ -124,14 +124,30 @@
     }
 
     table tr:not(.VueTables__no-results) td {
-      padding-right: 1rem;
+      padding: 0;
 
       &:first-of-type {
         min-width: 1.4rem;
         color: @red;
         border-right: 0 none;
-        padding-right: 0px;
+        padding: 5px 0 5px 5px;
         font-size: 130%;
+      }
+
+      &:last-of-type {
+        padding: 5px;
+      }
+
+      .dsa-contact-field {
+        padding: 5px 1rem 5px 5px;
+      }
+
+      .dsa-contact-field-invalid {
+        background-color: @invalid-cell-color;
+      }
+
+      &.dsa-edited .dsa-contact-field-invalid {
+        background-color: transparent;
       }
     }
 
