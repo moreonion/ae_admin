@@ -89,8 +89,40 @@
       }
     }
 
-    .dsa-dataset-meta {
-      margin-bottom: 1.5rem;
+    .dsa-edit-dataset-top-1 {
+      margin-bottom: 0.65rem;
+
+      @media (min-width: 750px) {
+        width: calc(~"50% - 0.5rem");
+        float: left;
+        margin-bottom: 1.5rem;
+      }
+    }
+
+    .dsa-edit-dataset-top-2 {
+      margin-bottom: 1rem;
+
+      @media (min-width: 750px) {
+        width: calc(~"50% - 0.5rem");
+        max-width: 24.4rem;
+        float: right;
+        margin-bottom: 1.5rem;
+        margin-top: 1.2rem;
+      }
+    }
+
+    .dsa-target-data {
+      clear: both;
+    }
+
+    .dsa-invalid-contacts-message {
+      margin-top: -0.35rem;
+      margin-bottom: 1rem;
+      color: @red;
+
+      @media (min-width: 900px) {
+        width: calc(50% - 0.5rem);
+      }
     }
 
     .VueTables__search {

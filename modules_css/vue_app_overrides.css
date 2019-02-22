@@ -950,8 +950,40 @@
 .datasets-app .dsa-edit-dataset-dialog .el-dialog .el-dialog__footer .dialog-footer.dialog-alert .dialog-alert-message {
   margin-right: 1rem;
 }
-.datasets-app .dsa-edit-dataset-dialog .dsa-dataset-meta {
-  margin-bottom: 1.5rem;
+.datasets-app .dsa-edit-dataset-dialog .dsa-edit-dataset-top-1 {
+  margin-bottom: 0.65rem;
+}
+@media (min-width: 750px) {
+  .datasets-app .dsa-edit-dataset-dialog .dsa-edit-dataset-top-1 {
+    width: calc(50% - 0.5rem);
+    float: left;
+    margin-bottom: 1.5rem;
+  }
+}
+.datasets-app .dsa-edit-dataset-dialog .dsa-edit-dataset-top-2 {
+  margin-bottom: 1rem;
+}
+@media (min-width: 750px) {
+  .datasets-app .dsa-edit-dataset-dialog .dsa-edit-dataset-top-2 {
+    width: calc(50% - 0.5rem);
+    max-width: 24.4rem;
+    float: right;
+    margin-bottom: 1.5rem;
+    margin-top: 1.2rem;
+  }
+}
+.datasets-app .dsa-edit-dataset-dialog .dsa-target-data {
+  clear: both;
+}
+.datasets-app .dsa-edit-dataset-dialog .dsa-invalid-contacts-message {
+  margin-top: -0.35rem;
+  margin-bottom: 1rem;
+  color: #d66540;
+}
+@media (min-width: 900px) {
+  .datasets-app .dsa-edit-dataset-dialog .dsa-invalid-contacts-message {
+    width: calc(49.5%);
+  }
 }
 .datasets-app .dsa-edit-dataset-dialog .VueTables__search:after {
   content: "";
