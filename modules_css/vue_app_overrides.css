@@ -143,22 +143,6 @@
   font-size: 7px;
   color: #514f4f;
 }
-.el-select .el-input__inner {
-  color: #514f4f;
-  background: #F5F1E8;
-  border: 0 none;
-  padding: 0 1rem 0 0.6rem;
-  height: 1.8rem;
-  width: 4.8rem;
-}
-.el-select .el-input__inner:focus {
-  background-color: #D6D2CC;
-}
-.el-select .el-input .el-input__icon {
-  width: 1rem;
-  font-size: 7px;
-  color: #514f4f;
-}
 .el-dropdown__caret-button {
   padding-left: 0.4rem;
   padding-right: 0.4rem;
@@ -944,14 +928,26 @@
   overflow-x: auto;
 }
 .datasets-app .dsa-edit-dataset-dialog table tr:not(.VueTables__no-results) td {
-  padding-right: 1rem;
+  padding: 0;
 }
 .datasets-app .dsa-edit-dataset-dialog table tr:not(.VueTables__no-results) td:first-of-type {
   min-width: 1.4rem;
   color: #d66540;
   border-right: 0 none;
-  padding-right: 0px;
+  padding: 5px 0 5px 5px;
   font-size: 130%;
+}
+.datasets-app .dsa-edit-dataset-dialog table tr:not(.VueTables__no-results) td:last-of-type {
+  padding: 5px;
+}
+.datasets-app .dsa-edit-dataset-dialog table tr:not(.VueTables__no-results) td .dsa-contact-field {
+  padding: 5px 1rem 5px 5px;
+}
+.datasets-app .dsa-edit-dataset-dialog table tr:not(.VueTables__no-results) td .dsa-contact-field-invalid {
+  background-color: rgba(214, 101, 64, 0.5);
+}
+.datasets-app .dsa-edit-dataset-dialog table tr:not(.VueTables__no-results) td.dsa-edited .dsa-contact-field-invalid {
+  background-color: transparent;
 }
 .datasets-app .dsa-edit-dataset-dialog table tr.VueTables__no-results td {
   color: #d66540;
