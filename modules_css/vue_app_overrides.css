@@ -229,7 +229,7 @@
   border-left: .3em solid transparent;
 }
 .show-help-text {
-  color: #0275d8;
+  color: #1695a2;
 }
 .show-help-text:before {
   content: "\e801";
@@ -954,23 +954,72 @@
 .datasets-app .dsa-edit-dataset-dialog .dsa-edit-dataset-top-1 {
   margin-bottom: 0.65rem;
 }
-@media (min-width: 750px) {
+@media (min-width: 815px) {
   .datasets-app .dsa-edit-dataset-dialog .dsa-edit-dataset-top-1 {
-    width: calc(50% - 0.5rem);
-    float: left;
-    margin-bottom: 1.5rem;
+    width: calc(100% - 27.8rem);
+    margin-bottom: 0.5rem;
+  }
+}
+@media (min-width: 1020px) {
+  .datasets-app .dsa-edit-dataset-dialog .dsa-edit-dataset-top-1 {
+    width: 50%;
+    margin-bottom: 0.5rem;
+  }
+}
+.datasets-app .dsa-edit-dataset-dialog .dsa-edit-dataset-dialog-table-wrapper {
+  clear: both;
+  margin: 0 -1rem -1rem;
+  padding: 0.9rem 1rem 1.8rem;
+  background: #fff;
+  border-top: 1px solid #eee;
+}
+.datasets-app .dsa-edit-dataset-dialog .dsa-edit-dataset-top-2-wrapper {
+  position: relative;
+}
+@media (min-width: 815px) {
+  .datasets-app .dsa-edit-dataset-dialog .dsa-edit-dataset-top-2-wrapper::after {
+    content: '';
+    display: block;
+    border: 1.3rem solid transparent;
+    border-top-color: #f2f28b;
+    width: 0;
+    height: 0;
+    position: absolute;
+    right: 1.5rem;
+    top: 0.8rem;
   }
 }
 .datasets-app .dsa-edit-dataset-dialog .dsa-edit-dataset-top-2 {
   margin-bottom: 1rem;
+  padding: 1.1rem 0.9rem 0.3rem;
+  background-color: #f2f28b;
+  border: 6px solid #fefad3;
+  outline: 1px solid #f4f398;
+  display: inline-block;
 }
-@media (min-width: 750px) {
+@media (min-width: 815px) {
   .datasets-app .dsa-edit-dataset-dialog .dsa-edit-dataset-top-2 {
-    width: calc(50% - 0.5rem);
-    max-width: 24.4rem;
-    float: right;
-    margin-bottom: 1.5rem;
-    margin-top: 1.2rem;
+    position: absolute;
+    right: 0;
+    bottom: -2.4rem;
+    max-width: 26.8rem;
+  }
+}
+.datasets-app .dsa-edit-dataset-dialog .dsa-edit-dataset-top-2 p {
+  margin-bottom: 1.3rem;
+}
+.datasets-app .dsa-edit-dataset-dialog .dsa-edit-dataset-top-2 p:last-child {
+  margin-bottom: 1.4rem;
+}
+.datasets-app .dsa-edit-dataset-dialog .dsa-upload-button-wrapper .el-button {
+  margin-bottom: 1rem;
+}
+.datasets-app .dsa-edit-dataset-dialog .dsa-upload-button-wrapper .el-button:first-of-type {
+  margin-right: 0.6rem;
+}
+@media (min-width: 815px) {
+  .datasets-app .dsa-edit-dataset-dialog .dsa-upload-button-wrapper {
+    white-space: nowrap;
   }
 }
 .datasets-app .dsa-edit-dataset-dialog .dsa-target-data {
@@ -1078,22 +1127,21 @@
 .datasets-app .dsa-edit-dataset-dialog .VuePagination .active .page-link {
   font-weight: bold;
 }
-.datasets-app .dsa-edit-dataset-dialog .dsa-upload-data-wrapper {
-  display: block;
-}
-.datasets-app .dsa-edit-dataset-dialog .dsa-upload-data-wrapper .el-button {
-  margin-bottom: 1rem;
-}
-@media (min-width: 750px) {
-  .datasets-app .dsa-edit-dataset-dialog .dsa-upload-data-wrapper {
-    float: right;
-  }
-  .datasets-app .dsa-edit-dataset-dialog .dsa-upload-data-wrapper .el-button {
-    margin-bottom: 0;
-  }
-}
 .datasets-app .dsa-edit-dataset-dialog .dsa-choose-dataset {
   float: left;
+  padding: 0.55rem 0;
+  color: #514f4f;
+  background: transparent;
+  font-size: 0.9rem;
+  font-weight: normal;
+  text-decoration: underline;
+  text-shadow: none;
+}
+.datasets-app .dsa-edit-dataset-dialog .dsa-choose-dataset:focus,
+.datasets-app .dsa-edit-dataset-dialog .dsa-choose-dataset:hover,
+.datasets-app .dsa-edit-dataset-dialog .dsa-choose-dataset:active,
+.datasets-app .dsa-edit-dataset-dialog .dsa-choose-dataset:active:focus {
+  color: #b65737;
 }
 .datasets-app .dsa-edit-dataset-dialog .dsa-edit-value-popup {
   border-radius: 5px;

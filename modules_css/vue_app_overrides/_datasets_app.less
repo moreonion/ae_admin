@@ -68,6 +68,7 @@
   }
 
   // edit dataset dialog
+  @edit-dataset-dialog-two-col-breakpoint: 815px;
 
   .dsa-edit-dataset-dialog {
     .el-dialog .el-dialog__footer {
@@ -92,22 +93,79 @@
     .dsa-edit-dataset-top-1 {
       margin-bottom: 0.65rem;
 
-      @media (min-width: 750px) {
-        width: calc(~"50% - 0.5rem");
-        float: left;
-        margin-bottom: 1.5rem;
+      @media (min-width: @edit-dataset-dialog-two-col-breakpoint) {
+        width: ~"calc(100% - 27.8rem)";
+        margin-bottom: 0.5rem;
+      }
+
+      @media (min-width: 1020px) {
+        width: 50%;
+        margin-bottom: 0.5rem;
+      }
+    }
+
+    .dsa-edit-dataset-dialog-table-wrapper {
+      clear: both;
+      margin: 0 -1rem -1rem;
+      padding: 0.9rem 1rem 1.8rem;
+      background: #fff;
+      border-top: 1px solid #eee;
+    }
+
+    .dsa-edit-dataset-top-2-wrapper {
+      position: relative;
+
+      @media (min-width: @edit-dataset-dialog-two-col-breakpoint) {
+        &::after {
+          content: '';
+          display: block;
+          border: 1.3rem solid transparent;
+          border-top-color: #f2f28b;
+          width: 0;
+          height: 0;
+          position: absolute;
+          right: 1.5rem;
+          top: 0.8rem;
+        }
       }
     }
 
     .dsa-edit-dataset-top-2 {
       margin-bottom: 1rem;
 
-      @media (min-width: 750px) {
-        width: calc(~"50% - 0.5rem");
-        max-width: 24.4rem;
-        float: right;
-        margin-bottom: 1.5rem;
-        margin-top: 1.2rem;
+      padding: 1.1rem 0.9rem 0.3rem;
+      background-color: #f2f28b;
+      border: 6px solid #fefad3;
+      outline: 1px solid #f4f398;
+      display: inline-block;
+
+      @media (min-width: @edit-dataset-dialog-two-col-breakpoint) {
+        position: absolute;
+        right: 0;
+        bottom: -2.4rem;
+        max-width: 26.8rem;
+      }
+
+      p {
+        margin-bottom: 1.3rem;
+      }
+
+      p:last-child {
+        margin-bottom: 1.4rem;
+      }
+    }
+
+    .dsa-upload-button-wrapper {
+      .el-button {
+        margin-bottom: 1rem;
+
+        &:first-of-type {
+          margin-right: 0.6rem;
+        }
+      }
+
+      @media (min-width: @edit-dataset-dialog-two-col-breakpoint) {
+        white-space: nowrap;
       }
     }
 
@@ -202,24 +260,19 @@
       }
     }
 
-    .dsa-upload-data-wrapper {
-      display: block;
-
-      .el-button {
-        margin-bottom: 1rem;
-      }
-
-      @media (min-width: 750px) {
-        float: right;
-
-        .el-button {
-          margin-bottom: 0;
-        }
-      }
-    }
-
     .dsa-choose-dataset {
       float: left;
+      padding: 0.55rem 0;
+      color: @font-color;
+      background: transparent;
+      font-size: 0.9rem;
+      font-weight: normal;
+      text-decoration: underline;
+      text-shadow: none;
+
+      &:focus, &:hover, &:active, &:active:focus {
+        color: #b65737;
+      }
     }
 
     .dsa-edit-value-popup {
