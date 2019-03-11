@@ -56,6 +56,7 @@
 }
 .el-button {
   vertical-align: middle;
+  font-family: 'Helvetica Neue', Helvetica, Arial, Lucida, 'Lucida Grande', 'Trebuchet MS', Tahoma, Verdana, sans-serif;
   font-size: 0.8125rem;
   font-weight: bold;
   padding: 0.6rem 1.2rem;
@@ -887,13 +888,13 @@
 .datasets-app * {
   box-sizing: border-box;
 }
-.datasets-app label {
+.datasets-app label:not(.el-button) {
   display: block;
   font-size: 0.8125rem;
   font-weight: bold;
   margin-bottom: 0.2rem;
 }
-.datasets-app label small {
+.datasets-app label:not(.el-button) small {
   font-weight: normal;
 }
 .datasets-app .dsa-intro-text,
@@ -1051,7 +1052,18 @@
   font-weight: bold;
 }
 .datasets-app .dsa-edit-dataset-dialog .dsa-upload-data-wrapper {
-  float: right;
+  display: block;
+}
+.datasets-app .dsa-edit-dataset-dialog .dsa-upload-data-wrapper .el-button {
+  margin-bottom: 1rem;
+}
+@media (min-width: 750px) {
+  .datasets-app .dsa-edit-dataset-dialog .dsa-upload-data-wrapper {
+    float: right;
+  }
+  .datasets-app .dsa-edit-dataset-dialog .dsa-upload-data-wrapper .el-button {
+    margin-bottom: 0;
+  }
 }
 .datasets-app .dsa-edit-dataset-dialog .dsa-choose-dataset {
   float: left;
