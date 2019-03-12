@@ -954,13 +954,13 @@
 .datasets-app .dsa-edit-dataset-dialog .dsa-edit-dataset-top-1 {
   margin-bottom: 0.65rem;
 }
-@media (min-width: 815px) {
+@media (min-width: 844px) {
   .datasets-app .dsa-edit-dataset-dialog .dsa-edit-dataset-top-1 {
-    width: calc(100% - 27.8rem);
+    width: calc(100% - 28.3rem - 1rem);
     margin-bottom: 0.5rem;
   }
 }
-@media (min-width: 1020px) {
+@media (min-width: 1080px) {
   .datasets-app .dsa-edit-dataset-dialog .dsa-edit-dataset-top-1 {
     width: 50%;
     margin-bottom: 0.5rem;
@@ -976,7 +976,7 @@
 .datasets-app .dsa-edit-dataset-dialog .dsa-edit-dataset-top-2-wrapper {
   position: relative;
 }
-@media (min-width: 815px) {
+@media (min-width: 844px) {
   .datasets-app .dsa-edit-dataset-dialog .dsa-edit-dataset-top-2-wrapper::after {
     content: '';
     display: block;
@@ -997,12 +997,12 @@
   outline: 1px solid #f4f398;
   display: inline-block;
 }
-@media (min-width: 815px) {
+@media (min-width: 844px) {
   .datasets-app .dsa-edit-dataset-dialog .dsa-edit-dataset-top-2 {
     position: absolute;
     right: 0;
     bottom: -2.4rem;
-    max-width: 26.8rem;
+    max-width: 28.3rem;
   }
 }
 .datasets-app .dsa-edit-dataset-dialog .dsa-edit-dataset-top-2 p {
@@ -1017,7 +1017,7 @@
 .datasets-app .dsa-edit-dataset-dialog .dsa-upload-button-wrapper .el-button:first-of-type {
   margin-right: 0.6rem;
 }
-@media (min-width: 815px) {
+@media (min-width: 844px) {
   .datasets-app .dsa-edit-dataset-dialog .dsa-upload-button-wrapper {
     white-space: nowrap;
   }

@@ -68,7 +68,9 @@
   }
 
   // edit dataset dialog
-  @edit-dataset-dialog-two-col-breakpoint: 815px;
+  @edit-dataset-dialog-two-col-breakpoint: 844px;
+  @edit-dataset-dialog-two-col-large-breakpoint: 1080px;
+  @yellow-bubble-width: 28.3rem;
 
   .dsa-edit-dataset-dialog {
     .el-dialog .el-dialog__footer {
@@ -94,11 +96,11 @@
       margin-bottom: 0.65rem;
 
       @media (min-width: @edit-dataset-dialog-two-col-breakpoint) {
-        width: ~"calc(100% - 27.8rem)";
+        width: ~"calc(100% - @{yellow-bubble-width} - 1rem)";
         margin-bottom: 0.5rem;
       }
 
-      @media (min-width: 1020px) {
+      @media (min-width: @edit-dataset-dialog-two-col-large-breakpoint) {
         width: 50%;
         margin-bottom: 0.5rem;
       }
@@ -143,7 +145,7 @@
         position: absolute;
         right: 0;
         bottom: -2.4rem;
-        max-width: 26.8rem;
+        max-width: @yellow-bubble-width;
       }
 
       p {
