@@ -68,6 +68,9 @@
   }
 
   // edit dataset dialog
+  @edit-dataset-dialog-two-col-breakpoint: 844px;
+  @edit-dataset-dialog-two-col-large-breakpoint: 1080px;
+  @yellow-bubble-width: 28.3rem;
 
   .dsa-edit-dataset-dialog {
     .el-dialog .el-dialog__footer {
@@ -89,8 +92,92 @@
       }
     }
 
-    .dsa-dataset-meta {
-      margin-bottom: 1.5rem;
+    .dsa-edit-dataset-top-1 {
+      margin-bottom: 0.65rem;
+
+      @media (min-width: @edit-dataset-dialog-two-col-breakpoint) {
+        width: ~"calc(100% - @{yellow-bubble-width} - 1rem)";
+        margin-bottom: 0.5rem;
+      }
+
+      @media (min-width: @edit-dataset-dialog-two-col-large-breakpoint) {
+        width: 50%;
+        margin-bottom: 0.5rem;
+      }
+    }
+
+    .dsa-edit-dataset-dialog-table-wrapper {
+      clear: both;
+      margin: 0 -1rem -1rem;
+      padding: 0.9rem 1rem 1.8rem;
+      background: #fff;
+      border-top: 1px solid #eee;
+    }
+
+    .dsa-edit-dataset-top-2-wrapper {
+      position: relative;
+
+      @media (min-width: @edit-dataset-dialog-two-col-breakpoint) {
+        &::after {
+          content: '';
+          display: block;
+          border: 1.3rem solid transparent;
+          border-top-color: #f2f28b;
+          width: 0;
+          height: 0;
+          position: absolute;
+          right: 1.5rem;
+          top: 0.8rem;
+        }
+      }
+    }
+
+    .dsa-edit-dataset-top-2 {
+      margin-bottom: 1rem;
+
+      padding: 1.1rem 0.9rem 0.3rem;
+      background-color: #f2f28b;
+      border: 6px solid #fefad3;
+      outline: 1px solid #f4f398;
+      display: inline-block;
+
+      @media (min-width: @edit-dataset-dialog-two-col-breakpoint) {
+        position: absolute;
+        right: 0;
+        bottom: -2.4rem;
+        max-width: @yellow-bubble-width;
+      }
+
+      p {
+        margin-bottom: 1.3rem;
+      }
+
+      p:last-child {
+        margin-bottom: 1.4rem;
+      }
+    }
+
+    .dsa-upload-button-wrapper {
+      .el-button {
+        margin-bottom: 1rem;
+
+        &:first-of-type {
+          margin-right: 0.6rem;
+        }
+      }
+
+      @media (min-width: @edit-dataset-dialog-two-col-breakpoint) {
+        white-space: nowrap;
+      }
+    }
+
+    .dsa-target-data {
+      clear: both;
+    }
+
+    .dsa-invalid-contacts-message {
+      margin-top: -0.35rem;
+      margin-bottom: 1rem;
     }
 
     .VueTables__search {
@@ -175,24 +262,19 @@
       }
     }
 
-    .dsa-upload-data-wrapper {
-      display: block;
-
-      .el-button {
-        margin-bottom: 1rem;
-      }
-
-      @media (min-width: 750px) {
-        float: right;
-
-        .el-button {
-          margin-bottom: 0;
-        }
-      }
-    }
-
     .dsa-choose-dataset {
       float: left;
+      padding: 0.55rem 0;
+      color: @font-color;
+      background: transparent;
+      font-size: 0.9rem;
+      font-weight: normal;
+      text-decoration: underline;
+      text-shadow: none;
+
+      &:focus, &:hover, &:active, &:active:focus {
+        color: #b65737;
+      }
     }
 
     .dsa-edit-value-popup {
