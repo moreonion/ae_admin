@@ -455,6 +455,12 @@
   font-weight: bold;
   margin-bottom: 0.4rem;
 }
+.e2tmw label.option {
+  display: inline-block;
+  font-weight: normal;
+  vertical-align: middle;
+  margin-bottom: 0.5em;
+}
 .e2tmw label small {
   font-weight: normal;
 }
@@ -649,6 +655,23 @@
 }
 .e2tmw .filter-editor .filter .remove-filter > span {
   display: none;
+}
+.e2tmw .exclusion-mode-radio:last-of-type {
+  margin-bottom: 1em;
+}
+.e2tmw .exclusion-mode-redirect {
+  margin-bottom: 1rem;
+}
+.e2tmw .exclusion-mode-redirect .typeahead {
+  display: block;
+}
+.e2tmw .exclusion-mode-redirect .typeahead.field-has-error input {
+  border-color: #d66540;
+  box-shadow: none!important;
+}
+.e2tmw .exclusion-mode-redirect small {
+  display: block;
+  margin-top: 0.45em;
 }
 .e2tmw .prefill-message {
   color: #0275d8;

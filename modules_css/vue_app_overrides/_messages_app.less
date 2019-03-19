@@ -29,6 +29,13 @@
     font-weight: bold;
     margin-bottom: 0.4rem;
 
+    &.option {
+      display: inline-block;
+      font-weight: normal;
+      vertical-align: middle;
+      margin-bottom: 0.5em;
+    }
+
     small {
       font-weight: normal;
     }
@@ -212,6 +219,28 @@
           display: none;
         }
       }
+    }
+  }
+
+  .exclusion-mode-radio:last-of-type {
+    margin-bottom: 1em;
+  }
+
+  .exclusion-mode-redirect {
+    margin-bottom: 1rem;
+
+    .typeahead {
+      display: block;
+
+      &.field-has-error input {
+        border-color: @red;
+        box-shadow: none!important;
+      }
+    }
+
+    small {
+      display: block;
+      margin-top: 0.45em;
     }
   }
 
