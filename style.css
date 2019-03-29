@@ -944,7 +944,7 @@ fieldset.field-group-heading .fieldset-content legend span.fieldset-title,
   margin: 0;
   font-weight: bold;
 }
-.fieldset .vertical-tabs-pane legend span.fieldset-title {
+.fieldset .vertical-tabs-pane > legend > span.fieldset-title {
   background: none transparent;
   display: none;
 }
@@ -976,7 +976,7 @@ fieldset.field-group-fieldset.collapsible {
 .field-type-text-with-summary {
   margin-bottom: 1em;
 }
-fieldset.field-group-heading.field-group-no-label legend span.fieldset-title {
+fieldset.field-group-heading.field-group-no-label > legend > span.fieldset-title {
   padding: 0;
   margin: 0;
   height: 1px;
