@@ -200,8 +200,14 @@
 
       .el-select .el-input .el-input__icon {
         width: 1rem;
-        font-size: 7px;
+        font-size: 12px;
+        margin-right: -0.3rem;
+        transform: translateY(-5px);
         color: @font-color;
+
+        &:before {
+          content: "\E60B";
+        }
       }
 
       .remove-filter {

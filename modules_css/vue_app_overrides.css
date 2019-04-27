@@ -91,10 +91,9 @@
   text-shadow: none;
 }
 .el-button .el-icon--right {
-  font-size: 7px;
+  font-size: 12px;
   margin-left: 0.5rem;
-  margin-right: -0.2rem;
-  transform: translateY(-1px);
+  margin-right: -0.4rem;
   text-shadow: none;
 }
 .el-button--primary {
@@ -141,16 +140,35 @@
 }
 .el-select .el-input .el-input__icon {
   width: 1rem;
-  font-size: 7px;
+  font-size: 12px;
+  margin-right: -0.3rem;
+  transform: translateY(-5px) !important;
   color: #514f4f;
 }
-.el-dropdown__caret-button {
-  padding-left: 0.4rem;
-  padding-right: 0.4rem;
+.el-dropdown .el-dropdown__caret-button {
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
 }
-.el-dropdown__icon {
-  font-size: 7px;
+.el-dropdown .el-dropdown__caret-button::before {
+  display: none;
+}
+.el-dropdown__icon,
+.el-select__caret {
+  font-size: 12px;
   text-shadow: none;
+}
+.el-dropdown__icon.el-icon-arrow-down::before,
+.el-select__caret.el-icon-arrow-down::before,
+.el-dropdown__icon.el-icon-arrow-up::before,
+.el-select__caret.el-icon-arrow-up::before {
+  content: "\E60B";
+}
+.el-dropdown-menu.el-popper[x-placement^=bottom],
+.el-select-dropdown.el-popper[x-placement^=bottom] {
+  margin-top: 0;
+}
+.el-select-dropdown.el-popper .popper__arrow {
+  display: none;
 }
 .el-select-dropdown {
   margin-top: 0;
@@ -162,6 +180,7 @@
 .el-select-dropdown__list,
 .typeahead .dropdown-menu {
   margin-top: 1px;
+  padding: 6px 0;
   border: 1px solid #e1dfd9;
   border-radius: 0.45rem;
   background-color: #F5F1E8;
@@ -183,13 +202,15 @@
 }
 .el-select-dropdown__item {
   font-size: 0.8125rem;
-  padding: 0.2rem 0.6rem;
+  line-height: 1rem;
+  padding: 0.4rem 0.6rem;
   height: 1.6rem;
   color: #787575;
 }
 .el-select-dropdown__item.selected,
 .el-select-dropdown__item.hover,
 .el-select-dropdown__item.selected.hover {
+  font-weight: normal;
   color: #F7F1F1;
   background-color: #827F7F;
 }
@@ -623,8 +644,13 @@
 }
 .e2tmw .filter-editor .filter .el-select .el-input .el-input__icon {
   width: 1rem;
-  font-size: 7px;
+  font-size: 12px;
+  margin-right: -0.3rem;
+  transform: translateY(-5px);
   color: #514f4f;
+}
+.e2tmw .filter-editor .filter .el-select .el-input .el-input__icon:before {
+  content: "\E60B";
 }
 .e2tmw .filter-editor .filter .remove-filter {
   position: absolute;
