@@ -13,14 +13,23 @@
 
     .el-dialog__title {
       font-size: @font-size-lg;
+      line-height: 1rem;
       font-weight: bold;
       color: #65635f;
     }
   }
 
-  .el-dialog__headerbtn .el-dialog__close {
-    font-weight: bold;
-    color: #7d7d7d;
+  .el-dialog__headerbtn {
+    padding: 0.6rem;
+    top: 0.3rem;
+    right: 0.3rem;
+
+    .el-dialog__close {
+      font-size: 21px;
+      line-height: 1.5rem;
+      font-weight: bold;
+      color: #7d7d7d;
+    }
   }
 
   .el-dialog__headerbtn:focus .el-dialog__close,

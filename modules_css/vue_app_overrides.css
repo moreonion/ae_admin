@@ -375,10 +375,18 @@
 }
 .el-dialog .el-dialog__header .el-dialog__title {
   font-size: 1rem;
+  line-height: 1rem;
   font-weight: bold;
   color: #65635f;
 }
+.el-dialog .el-dialog__headerbtn {
+  padding: 0.6rem;
+  top: 0.3rem;
+  right: 0.3rem;
+}
 .el-dialog .el-dialog__headerbtn .el-dialog__close {
+  font-size: 21px;
+  line-height: 1.5rem;
   font-weight: bold;
   color: #7d7d7d;
 }
@@ -997,7 +1005,7 @@
 .datasets-app .el-dialog__header .el-button {
   padding: 0.5rem 1rem 0.5rem;
   position: absolute;
-  top: 0.55rem;
+  top: 0.6rem;
   right: 2.7rem;
 }
 .datasets-app .dsa-hint {
