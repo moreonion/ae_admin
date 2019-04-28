@@ -461,6 +461,11 @@
   left: 0;
   transition: opacity .3s;
 }
+.el-dialog__body .el-loading-mask {
+  top: -1rem;
+  left: -1rem;
+  right: -1rem;
+}
 .el-loading-spinner .el-loading-text {
   color: #0275d8;
   margin: 3px 0;
