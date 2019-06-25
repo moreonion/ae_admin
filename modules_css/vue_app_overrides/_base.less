@@ -83,10 +83,9 @@
 
   // Dropdown caret
   .el-icon--right {
-    font-size: 7px;
+    font-size: 12px;
     margin-left: 0.5rem;
-    margin-right: -0.2rem;
-    transform: translateY(-1px);
+    margin-right: -0.4rem;
     text-shadow: none;
   }
 }
@@ -136,18 +135,39 @@
 
 .el-select .el-input .el-input__icon {
   width: 1rem;
-  font-size: 7px;
+  font-size: 12px;
+  margin-right: -0.3rem;
+  transform: translateY(-5px)!important;
   color: @font-color;
 }
 
-.el-dropdown__caret-button {
-  padding-left: 0.4rem;
-  padding-right: 0.4rem;
+.el-dropdown .el-dropdown__caret-button {
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+
+  &::before {
+    display: none;
+  }
 }
 
-.el-dropdown__icon {
-  font-size: 7px;
+.el-dropdown__icon,
+.el-select__caret {
+  font-size: 12px;
   text-shadow: none;
+
+  &.el-icon-arrow-down::before,
+  &.el-icon-arrow-up::before {
+    content: "\E60B";
+  }
+}
+
+.el-dropdown-menu.el-popper[x-placement^=bottom],
+.el-select-dropdown.el-popper[x-placement^=bottom] {
+  margin-top: 0;
+}
+
+.el-select-dropdown.el-popper .popper__arrow {
+  display: none;
 }
 
 .el-select-dropdown {
@@ -159,6 +179,7 @@
 
 .el-dropdown-menu, .el-select-dropdown__list, .typeahead .dropdown-menu {
   margin-top: 1px;
+  padding: 6px 0;
   border: @dropdown-border;
   border-radius: @btn-secondary-border-radius;
   background-color: @dropdown-bg;
@@ -179,11 +200,13 @@
 
 .el-select-dropdown__item {
   font-size: @font-size-base;
-  padding: 0.2rem 0.6rem;
+  line-height: 1rem;
+  padding: 0.4rem 0.6rem;
   height: 1.6rem;
   color: @dropdown-color;
 
   &.selected, &.hover, &.selected.hover {
+    font-weight: normal;
     color: @dropdown-hover-color;
     background-color: @dropdown-hover-bg;
   }
