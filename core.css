@@ -540,7 +540,7 @@ select.form-select:focus,
   width: 100%;
 }
 
-.form-builder-element select.form-select {
+.form-builder-element .webform-component select.form-select {
   pointer-events: none;
 }
 
@@ -613,7 +613,7 @@ select:not([multiple]) + .select2-container {
 }
 
 /* Select2 form builder overrides */
-.form-builder-element .select2-container {
+.form-builder-element .webform-component .select2-container {
   pointer-events: none;
 }
 .form-builder-element select:not([multiple]) + .select2-container {
