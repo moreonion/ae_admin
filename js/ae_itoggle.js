@@ -26,12 +26,12 @@ Drupal.behaviors.ae_itoggle = {
         label.css('display', checkbox.get(0).style.display);
 
         //label.addClass('iT_checkbox');
-        if (checkbox.attr('checked')) {
+        if (checkbox.prop('checked')) {
           label.addClass('iTon');
         } else {
           label.addClass('iToff');
         }
-        if (checkbox.attr('disabled')) {
+        if (checkbox.prop('disabled')) {
           label.addClass('disabled-itoggle');
         }
       });
@@ -40,17 +40,15 @@ Drupal.behaviors.ae_itoggle = {
     $('input[type=checkbox]', context).change(function(e, param) {
       var checkbox = $(this);
       var label    = checkbox.prev();
-      if (checkbox.attr('disabled')) {
+      if (checkbox.prop('disabled')) {
         return false;
       }
-      if (!checkbox.attr('checked')) {
-        //checkbox.removeAttr('checked');
-        label.stop().animate({backgroundPosition:'100% -'+label.innerHeight()+'px'}, 300, 'easeOutExpo', function(){
+      if (!checkbox.prop('checked')) {
+        label.stop().animate({'background-position-x': '100%'}, 300, 'easeOutExpo', function(){
           label.removeClass('iTon').addClass('iToff');
         });
       } else {
-        //checkbox.attr('checked', 'checked');
-        label.stop().animate({backgroundPosition:'0% -'+label.innerHeight()+'px'}, 300, 'easeOutExpo', function(){
+        label.stop().animate({'background-position-x': '0%'}, 300, 'easeOutExpo', function(){
           label.removeClass('iToff').addClass('iTon');
         });
       }
