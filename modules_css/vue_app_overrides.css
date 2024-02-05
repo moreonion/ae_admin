@@ -161,12 +161,13 @@
 .el-select__caret.el-icon-arrow-down::before,
 .el-dropdown__icon.el-icon-arrow-up::before,
 .el-select__caret.el-icon-arrow-up::before {
-  content: "\E60B";
+  content: "\e790";
 }
 .el-dropdown-menu.el-popper[x-placement^=bottom],
 .el-select-dropdown.el-popper[x-placement^=bottom] {
   margin-top: 0;
 }
+.el-dropdown-menu.el-popper .popper__arrow,
 .el-select-dropdown.el-popper .popper__arrow {
   display: none;
 }
