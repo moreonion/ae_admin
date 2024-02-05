@@ -982,6 +982,7 @@
 }
 .datasets-app * {
   box-sizing: border-box;
+  word-break: normal;
 }
 .datasets-app label:not(.el-button) {
   display: block;
