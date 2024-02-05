@@ -122,6 +122,13 @@ etc. **This is the file you will most likely want to override to begin your
 subtheme.**
 
 
+### Build CSS for Vue app overrides
+
+```shell
+$ lessc vue_app_overrides.less vue_app_overrides.css
+```
+
+
 Maintainer
 ----------
 - yhahn (Young Hahn)
