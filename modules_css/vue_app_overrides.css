@@ -14,7 +14,7 @@
 }
 .field-input {
   width: 100%;
-  padding: 0.4rem 0.5rem .3rem;
+  padding: 0.4rem 0.5rem 0.3rem;
   margin-bottom: 0.35rem;
   border: 2px solid #c6c6c6;
   background: #fff;
@@ -161,12 +161,13 @@
 .el-select__caret.el-icon-arrow-down::before,
 .el-dropdown__icon.el-icon-arrow-up::before,
 .el-select__caret.el-icon-arrow-up::before {
-  content: "\E60B";
+  content: "\e790";
 }
 .el-dropdown-menu.el-popper[x-placement^=bottom],
 .el-select-dropdown.el-popper[x-placement^=bottom] {
   margin-top: 0;
 }
+.el-dropdown-menu.el-popper .popper__arrow,
 .el-select-dropdown.el-popper .popper__arrow {
   display: none;
 }
@@ -245,9 +246,9 @@
   right: 0.5em;
   top: 50%;
   content: "";
-  border-top: .3em solid;
-  border-right: .3em solid transparent;
-  border-left: .3em solid transparent;
+  border-top: 0.3em solid;
+  border-right: 0.3em solid transparent;
+  border-left: 0.3em solid transparent;
 }
 .show-help-text {
   color: #1695a2;
@@ -354,12 +355,12 @@
 .v-tooltip[aria-hidden='true'] {
   visibility: hidden;
   opacity: 0;
-  transition: opacity .15s, visibility .15s;
+  transition: opacity 0.15s, visibility 0.15s;
 }
 .v-tooltip[aria-hidden='false'] {
   visibility: visible;
   opacity: 1;
-  transition: opacity .15s;
+  transition: opacity 0.15s;
 }
 .el-dialog {
   width: 90%;
@@ -432,7 +433,7 @@
   font-weight: bold;
 }
 .el-message-box .el-message-box__status {
-  font-size: 2.2rem!important;
+  font-size: 2.2rem !important;
 }
 .el-message-box .el-message-box__status.el-icon-warning {
   color: #fabe34;
@@ -459,7 +460,7 @@
   right: 0;
   bottom: 0;
   left: 0;
-  transition: opacity .3s;
+  transition: opacity 0.3s;
 }
 .el-dialog__body .el-loading-mask {
   top: -1rem;
@@ -692,7 +693,7 @@
   color: #514f4f;
 }
 .e2tmw .filter-editor .filter .el-select .el-input .el-input__icon:before {
-  content: "\E60B";
+  content: "\e790";
 }
 .e2tmw .filter-editor .filter .remove-filter {
   position: absolute;
@@ -981,6 +982,7 @@
 }
 .datasets-app * {
   box-sizing: border-box;
+  word-break: normal;
 }
 .datasets-app label:not(.el-button) {
   display: block;
@@ -1136,7 +1138,7 @@
 }
 .datasets-app .dsa-edit-dataset-dialog .VueTables__search input {
   width: 100%;
-  padding: 0.4rem 0.5rem .3rem;
+  padding: 0.4rem 0.5rem 0.3rem;
   margin-bottom: 0.35rem;
   border: 2px solid #c6c6c6;
   background: #fff;
