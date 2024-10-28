@@ -46,5 +46,7 @@ stylesheets[screen][] = modules_css/jquery.listdropdown.css
 stylesheets[screen][] = modules_css/ae_itoggle.css
 stylesheets[screen][] = modules_css/jquery.fs.selecter.css
 
+stylesheets[screen][] = disabled/ctools/modal.css
+
 ; Support shortcut module links
 settings[shortcut_module_link] = 1
