@@ -23,7 +23,7 @@ Drupal.behaviors.ae_admin.attach = function(context) {
   $('a.toggler:not(.ae_admin-processed)', context).each(function() {
     var id = $(this).attr('href').split('#')[1];
     // Target exists, add click handler.
-    if ($('#' + id).size() > 0) {
+    if ($('#' + id).length > 0) {
       $(this).click(function() {
         toggleable = $('#' + id);
         toggleable.toggle();
