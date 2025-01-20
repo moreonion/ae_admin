@@ -82,12 +82,6 @@ Drupal.behaviors.ae_admin.attach = function(context) {
       $('.form-item-submit-button-text').removeClass('form-active');
   });
 
-  // call resizeIframe (again) to set the height of the media-browser iframe
-  // after it is *fully* rendered
-  if(Drupal.media && Drupal.media.browser) {
-    setTimeout(Drupal.media.browser.resizeIframe, 1);
-  }
-
   $('.wizard-form', context).each(function() {
     $('.wizard-title .form-actions', this).sticky();
   });
